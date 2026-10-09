@@ -1,0 +1,6 @@
+{
+  "name": "Aether Smart City Platform Engine",
+  "description": "Production-ready keyless smart city platform featuring 35+ Indian cities, 10 vernacular languages, A* safe navigation, heritage guides, livability analytics, and civic triage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

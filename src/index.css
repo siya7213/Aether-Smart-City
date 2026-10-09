@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0a0e17;
+    color: #f1f5f9;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Cyberpunk Glows & Utility Classes */
+.neon-border-cyan {
+  border-color: #00f3ff;
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.25), inset 0 0 10px rgba(0, 243, 255, 0.1);
+}
+
+.neon-border-gold {
+  border-color: #ffb700;
+  box-shadow: 0 0 15px rgba(255, 183, 0, 0.25), inset 0 0 10px rgba(255, 183, 0, 0.1);
+}
+
+.neon-border-red {
+  border-color: #ef4444;
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.25), inset 0 0 10px rgba(239, 68, 68, 0.1);
+}
+
+.neon-glow-cyan {
+  filter: drop-shadow(0 0 8px rgba(0, 243, 255, 0.6));
+}
+
+.neon-glow-gold {
+  filter: drop-shadow(0 0 8px rgba(255, 183, 0, 0.6));
+}
+
+.grid-bg {
+  background-image: linear-gradient(to right, rgba(0, 243, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 243, 255, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0e17;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 243, 255, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f3ff;
+}
+
+/* Leaflet dark theme map overrides */
+.leaflet-container {
+  background: #0a0e17 !important;
+  font-family: inherit !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #1e293b !important;
+  color: #f8fafc !important;
+  border: 1px solid #00f3ff !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.3) !important;
+}
+
+.leaflet-popup-tip {
+  background: #1e293b !important;
+}
